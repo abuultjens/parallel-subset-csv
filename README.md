@@ -1,4 +1,4 @@
 # parallel-subset-csv
-Will subset csv files by index using parallel bash
+SubsetS csv files by index using parallel bash. It takes the indexes from a small file and pulles them out of a larger file and writes a new subset outfile.
 
-    $ sh sh.sh [SMALL.csv] [LARGE.csv] [OUTFILE.csv]
+    $ sh parallel_csv_subsetter.sh [SMALL.csv] [LARGE.csv] [OUTFILE.csv]
