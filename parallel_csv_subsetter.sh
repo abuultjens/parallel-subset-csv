@@ -40,7 +40,7 @@ for GROUP in $(cat ${RAND}/${RAND}_FOFN.txt); do
 
 	# loop through isolates in group
 	for TAXA in $(cat ${FILE}); do
-		grep ^"${TAXA}," ${LARGE} > ${RAND}_${TAXA}_tmp.csv &
+		grep ^"${TAXA}," ${LARGE} | head -1 > ${RAND}_${TAXA}_tmp.csv &
 	done
 
 	wait
